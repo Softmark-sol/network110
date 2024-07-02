@@ -1,8 +1,29 @@
+@font-face {
+  font-family: PoppinsBold;
+  src: url("../assets/fonts/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: PoppinsMedium;
+  src: url("../assets/fonts/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: Poppinslight;
+  src: url("../assets/fonts/Poppins-Light.ttf");
+}
+
 .about-us {
   background-color: #fff;
   text-align: center;
 }
-.company-history {
+
+.about-us h1 {
+  font-family: PoppinsBold;
+  color: #6132f1;
+  font-size: 3.5rem;
+  margin-top: 3rem;
+}
+.company-history,
+.mission-statement {
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -10,18 +31,61 @@
   flex-wrap: wrap;
   padding-top: 3rem;
 }
-.company-history-img {
+.company-history-img,
+.mission-statement-img {
   width: 50%;
 }
-.company-history-img img {
+.company-history-img img,
+.mission-statement-img img {
   width: 80%;
   height: 100%;
   border-radius: 5px;
 }
-.company-history-wrapper {
+.company-history-wrapper,
+.mission-statement-wrapper {
   width: 50%;
 }
-.company-history-wrapper p,
-.company-history-wrapper h2 {
+.company-history-wrapper h2,
+.mission-statement-wrapper h2 {
   text-align: right;
+  font-family: PoppinsMedium;
+  color: #030541;
+  font-size: 2.5rem;
+}
+.company-history-wrapper p,
+.mission-statement-wrapper p {
+  text-align: right;
+  font-family: Poppinslight;
+  padding-top: 0.5rem;
+  color: #616060;
+  font-size: 1.1rem;
+}
+@media only screen and (max-width: 992px) {
+  .company-history,
+  .mission-statement {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .company-history-img,
+  .mission-statement-img {
+    width: 100%;
+  }
+  .company-history-img img,
+  .mission-statement-img img {
+    width: 100%;
+  }
+  .company-history-wrapper,
+  .mission-statement-wrapper {
+    width: 100%;
+  }
+  .company-history-wrapper h2,
+  .mission-statement-wrapper h2{
+    text-align: center;
+    font-size: 2rem;
+  }
+  .company-history-wrapper p,
+  .mission-statement-wrapper p {
+    font-size: 1.2rem;
+    text-align: center;
+}
 }
