@@ -1,0 +1,17 @@
+.about-us{
+    /* display: flex;
+    flex-direction: column; */
+    text-align: center;
+}
+.company-history{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+.company-history h2{
+    margin: 0px;
+}
+.company-history-wrapper{
+    display: flex;
+    width: 100%;
+}
