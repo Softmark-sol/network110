@@ -1,17 +1,27 @@
-.about-us{
-    /* display: flex;
-    flex-direction: column; */
-    text-align: center;
+.about-us {
+  background-color: #fff;
+  text-align: center;
 }
-.company-history{
-    display: flex;
-    flex-direction: column;
-    text-align: right;
+.company-history {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 3rem;
 }
-.company-history h2{
-    margin: 0px;
+.company-history-img {
+  width: 50%;
 }
-.company-history-wrapper{
-    display: flex;
-    width: 100%;
+.company-history-img img {
+  width: 80%;
+  height: 100%;
+  border-radius: 5px;
+}
+.company-history-wrapper {
+  width: 50%;
+}
+.company-history-wrapper p,
+.company-history-wrapper h2 {
+  text-align: right;
 }
