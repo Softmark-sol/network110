@@ -5,10 +5,12 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import { FaLocationArrow } from "react-icons/fa";
+import "../css/cards.css";
 
 export default function Cards({ heading, desc, f1, f2, img }) {
   return (
     <Card
+      className="cards"
       sx={{
         maxWidth: "400px",
         width: "100%",
@@ -19,8 +21,9 @@ export default function Cards({ heading, desc, f1, f2, img }) {
     >
       <CardActionArea style={{ paddingBottom: "20px" }}>
         <CardMedia component="img" height="180" image={img} alt={heading} />
-        <CardContent>
+        <CardContent className="card-content">
           <Typography
+            className="heading"
             gutterBottom
             variant="h5"
             style={{ fontSize: "1.2rem", fontWeight: "bold" }}
@@ -51,6 +54,7 @@ export default function Cards({ heading, desc, f1, f2, img }) {
                 }}
               >
                 <FaLocationArrow
+                  className="rotate-icon"
                   color="6132f1"
                   size={18}
                   style={{ paddingRight: "5px" }}
@@ -64,6 +68,7 @@ export default function Cards({ heading, desc, f1, f2, img }) {
                 }}
               >
                 <FaLocationArrow
+                  className="rotate-icon"
                   color="6132f1"
                   size={18}
                   style={{ paddingRight: "5px" }}
