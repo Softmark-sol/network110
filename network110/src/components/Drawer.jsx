@@ -11,6 +11,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import {  AiOutlineInfoCircle } from 'react-icons/ai';
 import { FaRegAddressBook } from 'react-icons/fa';
+import { FaPhoneAlt } from "react-icons/fa";
 import { MdWork } from 'react-icons/md';
 
 const LeftDrawer = () => {
@@ -45,7 +46,9 @@ const LeftDrawer = () => {
         {[
             { text: 'خدمات', icon: <AiOutlineInfoCircle color="#4599B4" /> },
           { text: 'معلومات عنا', icon: <FaRegAddressBook color="#4599B4" /> },
-          { text: 'اتصل بنا', icon: <MdWork color="#4599B4" /> },
+          { text: 'اتصل بنا', icon: <MdWork color="#4599B4" /> },           
+          { text: '+966582180110', icon: <FaPhoneAlt color="#4599B4" /> },
+
         ].map(({ text, icon }) => (
           <ListItem key={text} disablePadding>
             <ListItemButton
