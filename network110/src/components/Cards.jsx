@@ -35,9 +35,10 @@ export default function Cards({ heading, desc, f1, f2, img }) {
             gutterBottom
             variant="h6"
             component="div"
-            style={{ textAlign: "left", paddingTop: "10px" }}
+            style={{ paddingTop: "10px",         textAlign: "right"
+            }}
           >
-            Features:
+            سمات:
             <ul
               style={{
                 listStyleType: "none",
@@ -47,28 +48,28 @@ export default function Cards({ heading, desc, f1, f2, img }) {
               <li
                 style={{
                   fontSize: ".9rem",
-                  paddingLeft: "10px",
+                  paddingRight: "10px",
                 }}
               >
+                {f1}
                 <FaLocationArrow
                   color="6132f1"
                   size={18}
-                  style={{ paddingRight: "5px" }}
+                  style={{ paddingLeft: "5px" }}
                 />
-                {f1}
               </li>
               <li
                 style={{
                   fontSize: ".9rem",
-                  paddingLeft: "10px",
+                  paddingRight: "10px",
                 }}
               >
+                {f2}
                 <FaLocationArrow
                   color="6132f1"
                   size={18}
-                  style={{ paddingRight: "5px" }}
+                  style={{ paddingLeft: "5px" }}
                 />
-                {f2}
               </li>
             </ul>
           </Typography>

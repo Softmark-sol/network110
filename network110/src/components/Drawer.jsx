@@ -43,9 +43,9 @@ const LeftDrawer = () => {
     >
       <List>
         {[
-            { text: 'Services', icon: <AiOutlineInfoCircle color="#4599B4" /> },
-          { text: 'About Us', icon: <FaRegAddressBook color="#4599B4" /> },
-          { text: 'Contact Us', icon: <MdWork color="#4599B4" /> },
+            { text: 'خدمات', icon: <AiOutlineInfoCircle color="#4599B4" /> },
+          { text: 'معلومات عنا', icon: <FaRegAddressBook color="#4599B4" /> },
+          { text: 'اتصل بنا', icon: <MdWork color="#4599B4" /> },
         ].map(({ text, icon }) => (
           <ListItem key={text} disablePadding>
             <ListItemButton

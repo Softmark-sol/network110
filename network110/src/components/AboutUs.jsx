@@ -6,7 +6,7 @@ const AboutUs = () => {
     <div
       className="container about-us"
       id="about">
-      <h1>About Us</h1>
+      <h1>معلومات عنا</h1>
       <div className="company-history">
         <div className="company-history-img">
           <img

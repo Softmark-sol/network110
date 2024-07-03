@@ -15,7 +15,7 @@
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 88vh; /* Adjusted for responsiveness */
+    height: 88vh; 
     justify-content: flex-start;
     margin: 0;
 }
@@ -28,36 +28,34 @@
     color: #ffffff;
     font-weight: bold;
     text-align: left;
-    /* font-size: 2rem; */
     margin: 0 70px;
     width: 45%;
 }
 
 .hero-container h2 {
     font-family: PoppinsBold;
-    font-size: 2.5rem;
+    font-size: 3rem;
     letter-spacing: 0.2rem;
 }
 
 .hero-container p {
     font-family: Poppins;
-    font-size: 1rem;
+    font-size: 1.5rem;
     letter-spacing: 0.1rem;
 }
 
-/* Media Queries for responsiveness */
 @media (max-width: 768px) {
     .hero-container {
-        font-size: 1.5rem; /* Adjust font size for smaller screens */
-        margin: 0 5%; /* Adjusted margin for smaller screens */
-        width: 90%; /* Adjusted width for smaller screens */
+        font-size: 1.5rem; 
+        margin: 0 5%; 
+        width: 90%; 
     }
 
     .hero-container h2 {
-        font-size: 2rem; /* Adjust heading font size for smaller screens */
+        font-size: 2rem;
     }
 
     .hero-container p {
-        font-size: 0.9rem; /* Adjust paragraph font size for smaller screens */
+        font-size: 0.9rem; 
     }
 }

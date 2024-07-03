@@ -60,7 +60,7 @@ const Footer = () => {
         <div className="footer-section">
           <h3>اتصل بنا</h3>
           <ul>
-            <li>network110@gmail.com :بريد إلكتروني</li>
+            {/* <li>network110@gmail.com :بريد إلكتروني</li> */}
             <li>الهاتف: +966582180110</li>
             <li>العنوان: سوق العليا الرياض، المملكة العربية السعودية.</li>
           </ul>

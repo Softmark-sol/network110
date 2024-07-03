@@ -35,7 +35,7 @@ const Navbar = () => {
         <div>
           <span onClick={() => Services()}>
             {/* Services */}
-            خدمات
+            خدمات 
           </span>
           <span onClick={() => About()}>
             {/* About Us */}
