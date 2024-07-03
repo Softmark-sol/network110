@@ -1,9 +1,12 @@
+<<<<<<< HEAD
+=======
 html, body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     background-color: #FAFAFA;
 }
+<<<<<<< HEAD
 
 @font-face {
     font-family: Poppins;
@@ -13,3 +16,6 @@ html, body{
 *{
     font-family: Poppins;
 }
+=======
+>>>>>>> e2cbdb6ae7bf4e22dcb6915cafdb4e5fdd0a48f7
+>>>>>>> 37164d4fb5eb26c29e09ce72eeb253ba17970cf3
