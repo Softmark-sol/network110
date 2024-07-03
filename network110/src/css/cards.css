@@ -1,22 +1,40 @@
-.cards{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    width: 30%;
+.cards {
+  transition: transform 0.2s ease;
+}
+.heading {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.cards:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  .heading {
+    color: #0d6efd;
+  }
 }
 
-.cards img{
-    width: 90%;
-    height: 150px;
-    border-radius: 20px;
+.cards:hover .rotate-icon {
+  transform: rotate(42deg);
+  transition: transform 0.3s ease;
+  margin-right: 10px;
 }
 
-.cards h2{
-    font-size: 1.2rem;
-    /* color: ; */
+/* .cardHeading {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
-.cards p{
-    font-size: 1rem;
+.cardFeatures {
+  text-align: left;
+  padding-top: 10px;
 }
+
+.cardFeatures ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cardFeatures li {
+  font-size: 0.9rem;
+  padding-left: 10px;
+} */
