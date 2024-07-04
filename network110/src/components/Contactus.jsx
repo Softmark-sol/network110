@@ -1,11 +1,13 @@
 import React from "react";
 import "../css/contactForm.css";
 import "../css/aboutUs.css";
+import "animate.css/animate.min.css"; // Import animate.css
+
 
 const ContactForm = () => {
   return (
     <div><div className="card-heading-service about-us" id="form" >
-    <h1>اتصل بنا</h1>
+    <h1> <span>اتصل بنا</span></h1>
   </div>
     <div className="contactForm-container">
       
@@ -22,8 +24,9 @@ const ContactForm = () => {
           </div>
           <div className="form-group">
             <input
-              type="text"
+              type="number"
               name="phone"
+              maxLength="13"
               className="form-control"
               placeholder="Phone"
             />
@@ -36,7 +39,7 @@ const ContactForm = () => {
               required
             ></textarea>
           </div>
-          <div className="btn-container">
+          <div className="btn-container animate__animated">
             <button type="submit">
               <span>أرسل رسالة</span>
             </button>

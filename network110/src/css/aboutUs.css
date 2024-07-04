@@ -23,6 +23,9 @@
   font-size: 3rem;
   margin-top: 3rem;
 }
+.about-us h1 span{
+  border-bottom: 2px solid #6132f1;
+}
 .company-history,
 .mission-statement {
   width: 100%;
@@ -38,6 +41,7 @@
 }
 .company-history-img img,
 .mission-statement-img img {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   width: 80%;
   height: 100%;
   border-radius: 5px;

@@ -25,7 +25,7 @@ const Navbar = () => {
   };
   return (
     <div className="navbar1">
-      <div className="left1">
+      <div className="left1 animate__animated animate__backInLeft">
         <h2>
           Network 110
           {/* الشبكة 110 */}
@@ -45,7 +45,7 @@ const Navbar = () => {
             {/* Contact Us */}
             اتصل بنا
           </span>
-          <span className="num">
+          <span className="num animate__animated animate__backInRight">
             <FaPhoneAlt
               color="#6132f1"
               size={15}

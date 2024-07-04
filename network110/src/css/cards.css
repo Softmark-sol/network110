@@ -1,13 +1,23 @@
+/* .cardBg{
+  background-image: url(../assets/images/cool-background.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+
+} */
+ *{
+  
+ }
 .cards {
-  transition: transform 0.2s ease;
+  transition: transform 0.1s ease;
 }
 .heading {
   font-size: 0.9rem;
   font-weight: bold;
 }
 .cards:hover {
-  transform: scale(1.02);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transform: scale(0.9);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   transition: 1s;
   .heading {
     color: #6132f1;

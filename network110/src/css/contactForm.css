@@ -4,6 +4,7 @@
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
+    margin-top: 20px;
     padding: 20px;
     background-color: #f9f9f9;
     border: 1px solid #ccc;
@@ -23,7 +24,12 @@
     position: relative;
     display: inline-block;
   }
-  
+  .card-heading-service h1 span{
+    border-bottom: 2px solid #6132f1;
+  }
+  .btn-container button:hover{
+    animation: tada 1s;
+  }
 
   
   .form-container {
