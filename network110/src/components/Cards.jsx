@@ -5,15 +5,13 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import { FaLocationArrow } from "react-icons/fa";
-// import "aos/dist/aos.css";
-// import AOS from "aos";
+import { useTranslation } from "react-i18next"; // Import useTranslation hook
 import "../css/cards.css";
 import ScrollReveal from "scrollreveal";
 
-export default function Cards({ heading, desc, f1, f2, img }) {
-  // useEffect(() => {
-  //   AOS.init({ duration: 1200 }); // Adjust the duration as needed
-  // }, []);
+const Cards = ({ heading, desc, f1, f2, img }) => {
+  const { t } = useTranslation(); // Initialize useTranslation hook
+
   useEffect(() => {
     const sr = ScrollReveal({
       origin: "bottom",
@@ -75,7 +73,7 @@ export default function Cards({ heading, desc, f1, f2, img }) {
             component="div"
             style={{ paddingTop: "10px", textAlign: "right" }}
           >
-            :سمات
+            {t("features")}: 
             <ul
               style={{
                 listStyleType: "none",
@@ -117,4 +115,6 @@ export default function Cards({ heading, desc, f1, f2, img }) {
       </CardActionArea>
     </Card>
   );
-}
+};
+
+export default Cards;
