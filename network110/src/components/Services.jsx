@@ -98,6 +98,8 @@ const Services = () => {
           alignItems: "center",
           flexDirection: "row",
           flexWrap: "wrap",
+          marginTop: "100px",
+          marginLeft: "200px",
         }}
       >
         {servicesData.map((service, index) => (

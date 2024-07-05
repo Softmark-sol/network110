@@ -12,7 +12,7 @@
 }
 
 .about-us {
-  background-color: #fff;
+  background-color: transparent;
   text-align: center;
   padding-top: 50px;
 }
@@ -23,7 +23,7 @@
   font-size: 3rem;
   margin-top: 3rem;
 }
-.about-us h1 span{
+.about-us h1 span {
   border-bottom: 2px solid #6132f1;
 }
 .company-history,
@@ -85,7 +85,7 @@
     width: 100%;
   }
   .company-history-wrapper h2,
-  .mission-statement-wrapper h2{
+  .mission-statement-wrapper h2 {
     text-align: center;
     font-size: 2rem;
   }
@@ -93,5 +93,5 @@
   .mission-statement-wrapper p {
     font-size: 1.2rem;
     text-align: center;
-}
+  }
 }

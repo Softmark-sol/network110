@@ -5,8 +5,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 const Navbar = () => {
   const Services = () => {
-    const servicesSection =
-      document.getElementById("services");
+    const servicesSection = document.getElementById("services");
     if (servicesSection) {
       servicesSection.scrollIntoView({
         behavior: "smooth",
@@ -15,8 +14,7 @@ const Navbar = () => {
   };
 
   const About = () => {
-    const servicesSection =
-      document.getElementById("about");
+    const servicesSection = document.getElementById("about");
     if (servicesSection) {
       servicesSection.scrollIntoView({
         behavior: "smooth",
@@ -35,7 +33,7 @@ const Navbar = () => {
         <div>
           <span onClick={() => Services()}>
             {/* Services */}
-            خدمات 
+            خدمات
           </span>
           <span onClick={() => About()}>
             {/* About Us */}
@@ -45,7 +43,7 @@ const Navbar = () => {
             {/* Contact Us */}
             اتصل بنا
           </span>
-          <span className="num animate__animated animate__backInRight">
+          <span className="num">
             <FaPhoneAlt
               color="#6132f1"
               size={15}
