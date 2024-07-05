@@ -1,61 +1,61 @@
 @font-face {
-    font-family: PoppinsBold;
-    src: url("../assets/fonts/Poppins-Bold.ttf");
+  font-family: PoppinsBold;
+  src: url("../assets/fonts/Poppins-Bold.ttf");
 }
 
 @font-face {
-    font-family: Poppins;
-    src: url("../assets/fonts/Poppins-Light.ttf");
+  font-family: Poppins;
+  src: url("../assets/fonts/Poppins-Light.ttf");
 }
 
 .hero {
-    background-image: url("https://img.freepik.com/free-photo/rear-view-businessman-talking-phone-city_53876-129657.jpg?t=st=1719938966~exp=1719942566~hmac=f2e38c76b2185231e2300e1cd6221bba5a7dd384ab00763e367165920b42b8e8&w=1060");
-    display: flex;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 88vh; 
-    justify-content: flex-start;
-    margin: 0;
+  background-image: url("https://img.freepik.com/free-photo/rear-view-businessman-talking-phone-city_53876-129657.jpg?t=st=1719938966~exp=1719942566~hmac=f2e38c76b2185231e2300e1cd6221bba5a7dd384ab00763e367165920b42b8e8&w=1060");
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 88vh;
+  justify-content: flex-start;
+  margin: 0;
 }
 
 .hero-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    font-weight: bold;
-    text-align: left;
-    margin: 0 70px;
-    width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: left;
+  margin: 0 70px;
+  width: 45%;
 }
 
 .hero-container h2 {
-    font-family: PoppinsBold;
-    font-size: 3rem;
-    letter-spacing: 0.2rem;
+  font-family: PoppinsBold;
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
 }
 
 .hero-container p {
-    font-family: Poppins;
-    font-size: 1.5rem;
-    letter-spacing: 0.1rem;
+  font-family: Poppins;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
 }
 
 @media (max-width: 768px) {
-    .hero-container {
-        font-size: 1.5rem; 
-        margin: 0 5%; 
-        width: 90%; 
-    }
+  .hero-container {
+    font-size: 1.5rem;
+    margin: 0 5%;
+    width: 90%;
+  }
 
-    .hero-container h2 {
-        font-size: 2rem;
-    }
+  .hero-container h2 {
+    font-size: 2rem;
+  }
 
-    .hero-container p {
-        font-size: 0.9rem; 
-    }
+  .hero-container p {
+    font-size: 0.9rem;
+  }
 }

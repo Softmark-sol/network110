@@ -5,10 +5,10 @@
   height: auto;
 
 } */
- *{
-  
- }
+* {
+}
 .cards {
+  margin-top: 100px;
   transition: transform 0.1s ease;
 }
 .heading {
@@ -28,7 +28,7 @@
   transform: rotate(42deg);
   transition: transform 0.3s ease;
   margin-right: 10px;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 /* .cardHeading {

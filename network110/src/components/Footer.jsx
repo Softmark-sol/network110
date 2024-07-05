@@ -18,7 +18,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-section footer-logo">
-          <h1>{t('footer.logo')}</h1>
+          <h1>Network 110</h1>
         </div>
         <div className="footer-section">
           <h3>{t('footer.quickLinks')}</h3>

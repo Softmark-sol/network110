@@ -5,13 +5,29 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import { FaLocationArrow } from "react-icons/fa";
-import "aos/dist/aos.css";
-import AOS from "aos";
+import { useTranslation } from "react-i18next"; // Import useTranslation hook
 import "../css/cards.css";
+import ScrollReveal from "scrollreveal";
 
-export default function Cards({ heading, desc, f1, f2, img }) {
+const Cards = ({ heading, desc, f1, f2, img }) => {
+  const { t } = useTranslation(); // Initialize useTranslation hook
+
   useEffect(() => {
-    AOS.init({ duration: 1200 }); // Adjust the duration as needed
+    const sr = ScrollReveal({
+      origin: "bottom",
+      distance: "200px",
+      duration: 1000,
+      delay: 200,
+      reset: true,
+    });
+
+    sr.reveal(".cards", {
+      interval: 200,
+    });
+    sr.reveal(".card-content", {
+      interval: 300,
+      origin: "left",
+    });
   }, []);
 
   return (
@@ -24,11 +40,11 @@ export default function Cards({ heading, desc, f1, f2, img }) {
         marginTop: "20px",
         maxHeight: "25rem",
         borderRadius: "10px",
-        boxShadow: "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",
+        boxShadow:
+          "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",
         backgroundImage: "url(../assets/images/cool-background.png)",
-
       }}
-      data-aos="fade-down-right" 
+      data-aos="fade-down-right"
       data-aos-duration="3000"
     >
       <CardActionArea style={{ paddingBottom: "20px" }}>
@@ -43,7 +59,12 @@ export default function Cards({ heading, desc, f1, f2, img }) {
           >
             {heading}
           </Typography>
-          <Typography variant="body1" color="text.secondary" fontWeight="bold" fontFamily="sans-serif">
+          <Typography
+            variant="body1"
+            color="text.secondary"
+            fontWeight="bold"
+            fontFamily="sans-serif"
+          >
             {desc}
           </Typography>
           <Typography
@@ -52,7 +73,7 @@ export default function Cards({ heading, desc, f1, f2, img }) {
             component="div"
             style={{ paddingTop: "10px", textAlign: "right" }}
           >
-            :سمات
+            {t("features")}: 
             <ul
               style={{
                 listStyleType: "none",
@@ -63,7 +84,7 @@ export default function Cards({ heading, desc, f1, f2, img }) {
                 style={{
                   fontSize: "1rem",
                   paddingRight: "10px",
-                  fontWeight:"400"
+                  fontWeight: "400",
                 }}
               >
                 {f1}
@@ -94,4 +115,6 @@ export default function Cards({ heading, desc, f1, f2, img }) {
       </CardActionArea>
     </Card>
   );
-}
+};
+
+export default Cards;

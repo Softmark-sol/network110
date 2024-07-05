@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import Cards from "./Cards";
 import "../css/aboutUs.css";
 import img1 from "../assets/images/cable.jpg";
@@ -13,82 +14,84 @@ import img9 from "../assets/images/camera2.jpg";
 import img10 from "../assets/images/electrical-installation.jpg";
 
 const Services = () => {
+  const { t } = useTranslation();
+
   const servicesData = [
     {
-      heading: "تمديد كابل الإنترنت",
-      desc: "تمديد داخلي مخفي دون كسر.",
-      f1: "تمديد سلس",
-      f2: "دون انقطاع كبير",
+      heading: t('services.heading1'),
+      desc: t('services.desc1'),
+      f1: t('services.f1_1'),
+      f2: t('services.f2_1'),
       img: img1,
     },
     {
-      heading: "تركيب وبرمجة أجهزة الراوتر ونقاط الوصول",
-      desc: "إعداد وتكوين أجهزة الشبكة.",
-      f1: "أداء شبكي محسن",
-      f2: "إعداد آمن",
+      heading: t('services.heading2'),
+      desc: t('services.desc2'),
+      f1: t('services.f1_2'),
+      f2: t('services.f2_2'),
       img: img2,
     },
     {
-      heading: "تركيب وإنشاء كاميرات المراقبة",
-      desc: "إعداد أنظمة المراقبة وتمديد كابلات الكاميرا.",
-      f1: "أمان معزز",
-      f2: "تركيب احترافي",
+      heading: t('services.heading3'),
+      desc: t('services.desc3'),
+      f1: t('services.f1_3'),
+      f2: t('services.f2_3'),
       img: img3,
     },
     {
-      heading: "فحص وصيانة الإنترنت",
-      desc: "حل جميع مشاكل الإنترنت بما في ذلك الاتصالات الضعيفة والمتقطعة.",
-      f1: "إنترنت موثوق",
-      f2: "خدمات الإصلاح",
+      heading: t('services.heading4'),
+      desc: t('services.desc4'),
+      f1: t('services.f1_4'),
+      f2: t('services.f2_4'),
       img: img4,
     },
     {
-      heading: "تركيب كابلات الإنترنت ورؤوس RJ45",
-      desc: "تركيب احترافي لكابلات الإنترنت والرؤوس.",
-      f1: "اتصالات عالية الجودة",
-      f2: "تركيب متخصص",
+      heading: t('services.heading5'),
+      desc: t('services.desc5'),
+      f1: t('services.f1_5'),
+      f2: t('services.f2_5'),
       img: img5,
     },
     {
-      heading: "حلول لمشاكل الإنترنت والكاميرات والكهرباء",
-      desc: "حلول شاملة لجميع المشاكل ذات الصلة.",
-      f1: "حلول فعالة",
-      f2: "إصلاح متخصص",
+      heading: t('services.heading6'),
+      desc: t('services.desc6'),
+      f1: t('services.f1_6'),
+      f2: t('services.f2_6'),
       img: img6,
     },
     {
-      heading: "صيانة وإعداد وتشغيل الشبكات",
-      desc: "صيانة دورية وإعداد تشغيلي للشبكات.",
-      f1: "أداء شبكي مثالي",
-      f2: "دعم مستمر",
+      heading: t('services.heading7'),
+      desc: t('services.desc7'),
+      f1: t('services.f1_7'),
+      f2: t('services.f2_7'),
       img: img7,
     },
     {
-      heading: "اتصال إنترنت في جميع أنحاء المنزل",
-      desc: "ضمان سرعة إنترنت متسقة في جميع أنحاء المنزل.",
-      f1: "تغطية للمنزل بأكمله",
-      f2: "أداء مستقر",
+      heading: t('services.heading8'),
+      desc: t('services.desc8'),
+      f1: t('services.f1_8'),
+      f2: t('services.f2_8'),
       img: img8,
     },
     {
-      heading: "تركيب الإنترنت والكاميرات في مواقع متنوعة",
-      desc: "خدمات للمنازل والمكاتب والفنادق والمتاجر.",
-      f1: "تركيب متعدد الاستخدامات",
-      f2: "حلول مخصصة",
+      heading: t('services.heading9'),
+      desc: t('services.desc9'),
+      f1: t('services.f1_9'),
+      f2: t('services.f2_9'),
       img: img9,
     },
     {
-      heading: "حلول كهربائية وتركيب كابلات",
-      desc: "حلول لمشاكل الكهرباء والتركيبات الكهربائية.",
-      f1: "عمل كهربائي آمن وموثوق",
-      f2: "خدمة مهنية",
+      heading: t('services.heading10'),
+      desc: t('services.desc10'),
+      f1: t('services.f1_10'),
+      f2: t('services.f2_10'),
       img: img10,
     },
   ];
 
   return (
     <div className="about-us" id="services">
-      <h1>خدماتنا</h1>
+      <h1>{t('services.title')}</h1>
       <div
         className="container"
         style={{
@@ -98,6 +101,8 @@ const Services = () => {
           alignItems: "center",
           flexDirection: "row",
           flexWrap: "wrap",
+          marginTop: "100px",
+          marginLeft: "200px",
         }}
       >
         {servicesData.map((service, index) => (

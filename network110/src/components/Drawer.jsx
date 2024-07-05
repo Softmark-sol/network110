@@ -13,6 +13,7 @@ import {  AiOutlineInfoCircle } from 'react-icons/ai';
 import { FaRegAddressBook } from 'react-icons/fa';
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdWork } from 'react-icons/md';
+import Switch from '../languageSelector/Switch';
 
 const LeftDrawer = () => {
   const [state, setState] = useState({
@@ -78,6 +79,7 @@ const LeftDrawer = () => {
         onClose={toggleDrawer('left', false)}
       >
         {list('left')}
+        <Switch />  
       </Drawer>
     </div>
   );
