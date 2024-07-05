@@ -40,9 +40,9 @@ body {
 .right1 div {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  width: 70%;
-  font-size: 1.2vw;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 1vw;
 }
 
 /* .left1 img{
@@ -57,7 +57,7 @@ body {
 }
 
 .right1 {
-  width: 68%;
+  width: 50%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
