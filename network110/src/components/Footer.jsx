@@ -24,7 +24,7 @@ const Footer = () => {
 
       const Contact = () => {
         const servicesSection =
-          document.getElementById("contact");
+          document.getElementById("form");
         if (servicesSection) {
           servicesSection.scrollIntoView({
             behavior: "smooth",

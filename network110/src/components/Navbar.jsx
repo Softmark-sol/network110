@@ -21,6 +21,16 @@ const Navbar = () => {
       });
     }
   };
+
+  const Contact = () => {
+    const servicesSection =
+      document.getElementById("form");
+    if (servicesSection) {
+      servicesSection.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  };
   return (
     <div className="navbar1">
       <div className="left1 animate__animated animate__backInLeft">
@@ -39,7 +49,7 @@ const Navbar = () => {
             {/* About Us */}
             معلومات عنا
           </span>
-          <span>
+          <span onClick={()=>Contact()}>
             {/* Contact Us */}
             اتصل بنا
           </span>

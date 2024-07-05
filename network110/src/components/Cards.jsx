@@ -75,7 +75,7 @@ export default function Cards({ heading, desc, f1, f2, img }) {
             component="div"
             style={{ paddingTop: "10px", textAlign: "right" }}
           >
-            سمات:
+            :سمات
             <ul
               style={{
                 listStyleType: "none",
