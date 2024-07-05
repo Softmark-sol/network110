@@ -42,14 +42,18 @@ const Navbar = () => {
       </div>
       <div className="right1">
         <div>
-          <span onClick={Services}>{t('navbar.services')}</span>
-          <span onClick={About}>{t('navbar.about')}</span>
-          <span onClick={Contact}>{t('navbar.contact')}</span>
-          <span className="num animate__animated animate__backInRight">
-            <FaPhoneAlt color="#6132f1" size={15} style={{ marginRight: "10px" }} />
+          <span onClick={Services}>{t("navbar.services")}</span>
+          <span onClick={About}>{t("navbar.about")}</span>
+          <span onClick={Contact}>{t("navbar.contact")}</span>
+          <span className="num">
+            <FaPhoneAlt
+              color="#6132f1"
+              size={15}
+              style={{ marginRight: "10px" }}
+            />
             +966582180110
           </span>
-        <Switch />
+          <Switch />
         </div>
       </div>
       <div className="navbar-menu">
