@@ -40,7 +40,7 @@ body {
 .right1 div {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   font-size: 1vw;
 }
@@ -87,6 +87,12 @@ body {
 .num:hover{
   animation: tada 1s;
   font-weight: bolder;
+}
+
+@media (max-width: 900px) {
+  .right1 div span {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 768px) {
