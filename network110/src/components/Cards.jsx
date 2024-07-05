@@ -46,8 +46,8 @@ export default function Cards({ heading, desc, f1, f2, img }) {
           "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",
         backgroundImage: "url(../assets/images/cool-background.png)",
       }}
-      data-aos="fade-down-right"
-      data-aos-duration="3000"
+      // data-aos="fade-down-right"
+      // data-aos-duration="3000"
     >
       <CardActionArea style={{ paddingBottom: "20px" }}>
         <CardMedia component="img" height="180" image={img} alt={heading} />

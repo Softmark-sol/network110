@@ -99,7 +99,6 @@ const Services = () => {
           flexDirection: "row",
           flexWrap: "wrap",
           marginTop: "100px",
-          marginLeft: "200px",
         }}
       >
         {servicesData.map((service, index) => (
