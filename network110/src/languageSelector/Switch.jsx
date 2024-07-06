@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 const languages = [
-  { code: "en", lang: "إنجليزي" },
+  { code: "en", lang: "English" },
   { code: "ar", lang: "Arabic" },
 ];
 
@@ -11,8 +11,6 @@ const Switch = () => {
   const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
 
   useEffect(() => {
-    // You may want to handle direction changes based on selectedLanguage here if needed
-    // document.body.dir = selectedLanguage === 'ar' ? 'rtl' : 'ltr';
   }, [selectedLanguage]);
 
   const toggleLanguage = () => {
@@ -22,7 +20,7 @@ const Switch = () => {
   };
 
   return (
-      <button onClick={toggleLanguage} style={{fontSize: "1rem"}}>
+      <button onClick={toggleLanguage} style={{backgroundColor: "#00afef"}}>
         {selectedLanguage === languages[0].code ? languages[1].lang : languages[0].lang}
       </button>
   );

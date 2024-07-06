@@ -49,7 +49,7 @@ const AboutUs = () => {
         </div>
         <div className="mission-statement-img">
           <img
-            src="https://img.freepik.com/free-vector/illustration-business-graph-analysis_53876-36925.jpg?uid=R153806790&ga=GA1.1.88436429.1719244827&semt=ais_user"
+            src="https://img.freepik.com/premium-photo/target-strategy-concept-businessman-focus-aim-by-throwing-dart-targeting_28629-1458.jpg?w=826"
             alt="mission-statement-img"
           />
         </div>

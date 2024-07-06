@@ -34,7 +34,7 @@ body {
   align-items: center;
   justify-content: space-evenly;
   /* width: 50%; */
-  margin-left: 50px;
+  /* margin-left: 50px; */
 }
 
 .right1 div {
@@ -45,15 +45,10 @@ body {
   font-size: 1vw;
 }
 
-/* .left1 img{
-    width: 5vw;
-    height: 5vw;
-} */
-
-.left1 h2 {
-  font-size: 1.9rem;
-  font-family: PoppinsBold;
-  color: #6132f1;
+.left1 img {
+  width: 15vw;
+  padding-top: 10px;
+  padding-left: 30px;
 }
 
 .right1 {
@@ -65,15 +60,15 @@ body {
 
 .right1 div span {
   color: rgb(97, 96, 96);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-family: Poppins;
   font-weight: 510;
+  font-weight: bold;
   cursor: pointer;
 }
 
 .right1 div span:hover {
-  color: #6132f1;
-  font-weight: bold;
+  color: #00afef;
 }
 
 .navbar-menu {
@@ -81,7 +76,7 @@ body {
 }
 
 .num {
-  color: #6132f1 !important;
+  color: #00afef !important;
   font-weight: bold;
 }
 .num:hover{
@@ -91,7 +86,7 @@ body {
 
 @media (max-width: 900px) {
   .right1 div span {
-    font-size: 1rem;
+    font-size: .8rem;
   }
 }
 
@@ -104,9 +99,16 @@ body {
     display: block;
   }
 
+  .navbar1{
+    height: 10vw !important;
+  }
+
   .left1 {
-    margin-left: 0px;
+    margin-left: -40px;
     width: 40%;
+  }
+  .left1 img{
+    width: 25vw;
   }
   .left1 h2 {
     font-size: 3vw;

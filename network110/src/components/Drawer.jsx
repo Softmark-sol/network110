@@ -111,7 +111,7 @@ const LeftDrawer = () => {
 
   return (
     <div>
-      <Button onClick={toggleDrawer('left', true)}><GiHamburgerMenu /></Button>
+      <Button onClick={toggleDrawer('left', true)}><GiHamburgerMenu size={25} color='#00afef'/></Button>
       <Drawer
         anchor='left'
         open={state.left}

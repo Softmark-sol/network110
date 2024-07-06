@@ -4,6 +4,7 @@ import "../css/navbar.css";
 import LeftDrawer from "./Drawer";
 import { FaPhoneAlt } from "react-icons/fa";
 import Switch from "../languageSelector/Switch";
+import Logo from "../assets/images/logo.png"
 
 const Navbar = () => {
   const { t } = useTranslation();
@@ -38,7 +39,7 @@ const Navbar = () => {
   return (
     <div className="navbar1">
       <div className="left1 animate__animated animate__backInLeft">
-        <h2>Network 110</h2>
+        <img src={Logo} alt="logo" />
       </div>
       <div className="right1">
         <div>
@@ -47,9 +48,9 @@ const Navbar = () => {
           <span onClick={Contact}>{t("navbar.contact")}</span>
           <span className="num">
             <FaPhoneAlt
-              color="#6132f1"
+              color="#00afef"
               size={15}
-              style={{ marginRight: "10px" }}
+              style={{ marginRight: "5px", marginTop: "-2px" }}
             />
             +966582180110
           </span>

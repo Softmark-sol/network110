@@ -5,12 +5,12 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import { FaLocationArrow } from "react-icons/fa";
-import { useTranslation } from "react-i18next"; // Import useTranslation hook
+import { useTranslation } from "react-i18next"; 
 import "../css/cards.css";
 import ScrollReveal from "scrollreveal";
 
 const Cards = ({ heading, desc, f1, f2, img }) => {
-  const { t } = useTranslation(); // Initialize useTranslation hook
+  const { t } = useTranslation();
 
   useEffect(() => {
     const sr = ScrollReveal({
@@ -44,8 +44,6 @@ const Cards = ({ heading, desc, f1, f2, img }) => {
           "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",
         backgroundImage: "url(../assets/images/cool-background.png)",
       }}
-      // data-aos="fade-down-right"
-      // data-aos-duration="3000"
     >
       <CardActionArea style={{ paddingBottom: "20px" }}>
         <CardMedia component="img" height="180" image={img} alt={heading} />
@@ -73,7 +71,7 @@ const Cards = ({ heading, desc, f1, f2, img }) => {
             component="div"
             style={{ paddingTop: "10px", textAlign: "right" }}
           >
-            {t("features")}: 
+            {t("features")}
             <ul
               style={{
                 listStyleType: "none",
@@ -90,7 +88,7 @@ const Cards = ({ heading, desc, f1, f2, img }) => {
                 {f1}
                 <FaLocationArrow
                   className="rotate-icon"
-                  color="6132f1"
+                  color="00afef"
                   size={18}
                   style={{ paddingLeft: "5px" }}
                 />
@@ -104,7 +102,7 @@ const Cards = ({ heading, desc, f1, f2, img }) => {
                 {f2}
                 <FaLocationArrow
                   className="rotate-icon"
-                  color="6132f1"
+                  color="00afef"
                   size={18}
                   style={{ paddingLeft: "5px" }}
                 />

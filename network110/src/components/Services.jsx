@@ -101,7 +101,6 @@ const Services = () => {
           alignItems: "center",
           flexDirection: "row",
           flexWrap: "wrap",
-          // marginTop: "100px",
         }}
       >
         {servicesData.map((service, index) => (
