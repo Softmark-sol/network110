@@ -34,6 +34,13 @@
       "phone": "+966582180110",
       "address": "Al Olya Market, Riyadh, Saudi Arabia"
     },
+    "services":{
+      "services": "Our Services",
+      "a": "Internet Cable Extension",
+      "b": "Installation of Cameras",
+      "c": "Internet Inspection and Maintenance",
+      "d": "Network Maintenance and Setup"
+    },
     "copyright": "2024 Network 110. All rights reserved."
   },
   "contactForm-h": {

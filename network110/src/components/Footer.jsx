@@ -17,11 +17,17 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <div className="footer-section footer-logo">
-          <h1>Network 110</h1>
+      <div className="footer-section">
+          <h2>{t('footer.services.services')}</h2>
+          <ul>
+            <li >{t('footer.services.a')}</li>
+            <li >{t('footer.services.b')}</li>
+            <li >{t('footer.services.c')}</li>
+            <li >{t('footer.services.d')}</li>
+          </ul>
         </div>
         <div className="footer-section">
-          <h3>{t('footer.quickLinks')}</h3>
+          <h2>{t('footer.quickLinks')}</h2>
           <ul>
             <li onClick={() => scrollToSection('hero')}>{t('footer.links.home')}</li>
             <li onClick={() => scrollToSection('services')}>{t('footer.links.services')}</li>
@@ -30,7 +36,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer-section">
-          <h3>{t('footer.contact.contact')}</h3>
+          <h2>{t('footer.contact.contact')}</h2>
           <ul>
             <li>{t('footer.contact.phone')}</li>
             <li>{t('footer.contact.address')}</li>

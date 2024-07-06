@@ -85,10 +85,10 @@ const LeftDrawer = () => {
     >
       <List>
         {[
-          { text: t('Services'), icon: <AiOutlineInfoCircle color="#4599B4" />, key: "services" },
-          { text: t('AboutUs'), icon: <FaRegAddressBook color="#4599B4" />, key: "aboutUs" },
-          { text: t('contactUs'), icon: <MdWork color="#4599B4" />, key: "contactUs" },           
-          { text: '+966582180110', icon: <FaPhoneAlt color="#4599B4" />, key: "phone" },
+          { text: t('Services'), icon: <AiOutlineInfoCircle color="#00afef" />, key: "services" },
+          { text: t('AboutUs'), icon: <FaRegAddressBook color="#00afef" />, key: "aboutUs" },
+          { text: t('contactUs'), icon: <MdWork color="#00afef" />, key: "contactUs" },           
+          { text: '+966582180110', icon: <FaPhoneAlt color="#00afef" />, key: "phone" },
         ].map(({ text, icon, key }) => (
           <ListItem key={key} disablePadding>
             <ListItemButton
