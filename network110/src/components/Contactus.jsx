@@ -17,7 +17,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div>
+    <div className="container">
       <div className="card-heading-service about-us" id="form">
         <h1><span>{t('contactForm-h.contactUs')}</span></h1>
       </div>

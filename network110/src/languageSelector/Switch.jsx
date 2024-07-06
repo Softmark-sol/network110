@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 const languages = [
-  { code: "en", lang: "English" },
+  { code: "en", lang: "إنجليزي" },
   { code: "ar", lang: "Arabic" },
 ];
 
@@ -22,7 +22,7 @@ const Switch = () => {
   };
 
   return (
-      <button onClick={toggleLanguage}>
+      <button onClick={toggleLanguage} style={{fontSize: "1rem"}}>
         {selectedLanguage === languages[0].code ? languages[1].lang : languages[0].lang}
       </button>
   );

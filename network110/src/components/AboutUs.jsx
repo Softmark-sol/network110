@@ -1,6 +1,4 @@
 import React, { useEffect } from "react";
-// import AOS from "aos";
-// import "aos/dist/aos.css";
 import { useTranslation } from "react-i18next";
 import "../css/aboutUs.css";
 import ScrollReveal from "scrollreveal";
@@ -24,15 +22,6 @@ const AboutUs = () => {
       origin: "bottom",
     });
   }, []);
-
-  // useEffect(() => {
-  //   AOS.init({
-  //     // Global settings for AOS
-  //     duration: 800, // Animation duration
-  //     once: true, // Whether animation should happen only once
-  //     easing: 'ease', // Easing function for animation
-  //   });
-  // }, []);
 
   return (
     <div className="container about-us" id="about">

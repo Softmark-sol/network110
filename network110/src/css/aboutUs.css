@@ -67,8 +67,11 @@
   text-align: justify;
 }
 @media only screen and (max-width: 992px) {
-  .company-history,
   .mission-statement {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  .company-history{
     flex-direction: column;
     gap: 2rem;
   }

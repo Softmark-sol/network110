@@ -9,13 +9,15 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import { GiHamburgerMenu } from 'react-icons/gi';
-import {  AiOutlineInfoCircle } from 'react-icons/ai';
+import { AiOutlineInfoCircle } from 'react-icons/ai';
 import { FaRegAddressBook } from 'react-icons/fa';
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdWork } from 'react-icons/md';
 import Switch from '../languageSelector/Switch';
+import { useTranslation } from 'react-i18next';
 
 const LeftDrawer = () => {
+  const { t } = useTranslation();
   const [state, setState] = useState({
     left: false,
   });
@@ -31,9 +33,47 @@ const LeftDrawer = () => {
     setState({ ...state, [anchor]: open });
   };
 
+  const Services = () => {
+    const servicesSection = document.getElementById("services");
+    if (servicesSection) {
+      servicesSection.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const About = () => {
+    const aboutSection = document.getElementById("about");
+    if (aboutSection) {
+      aboutSection.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const Contact = () => {
+    const contactSection = document.getElementById("form");
+    if (contactSection) {
+      contactSection.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  };
+
   const handleNavigation = (text) => {
-    // Implement your navigation logic here
-    console.log(`Navigate to ${text}`);
+    switch(text){
+      case 'services':
+        Services();
+        break;
+      case 'aboutUs':
+        About();
+        break;
+      case 'contactUs':
+        Contact();
+        break;
+      default:
+        console.log(`Navigate to ${text}`);
+    }
   };
 
   const list = (anchor) => (
@@ -45,16 +85,15 @@ const LeftDrawer = () => {
     >
       <List>
         {[
-            { text: 'خدمات', icon: <AiOutlineInfoCircle color="#4599B4" /> },
-          { text: 'معلومات عنا', icon: <FaRegAddressBook color="#4599B4" /> },
-          { text: 'اتصل بنا', icon: <MdWork color="#4599B4" /> },           
-          { text: '+966582180110', icon: <FaPhoneAlt color="#4599B4" /> },
-
-        ].map(({ text, icon }) => (
-          <ListItem key={text} disablePadding>
+          { text: t('Services'), icon: <AiOutlineInfoCircle color="#4599B4" />, key: "services" },
+          { text: t('AboutUs'), icon: <FaRegAddressBook color="#4599B4" />, key: "aboutUs" },
+          { text: t('contactUs'), icon: <MdWork color="#4599B4" />, key: "contactUs" },           
+          { text: '+966582180110', icon: <FaPhoneAlt color="#4599B4" />, key: "phone" },
+        ].map(({ text, icon, key }) => (
+          <ListItem key={key} disablePadding>
             <ListItemButton
               sx={{ paddingLeft: '8px' }}
-              onClick={() => handleNavigation(text)}
+              onClick={() => handleNavigation(key)}
             >
               <ListItemIcon
                 sx={{ minWidth: '35px', color: '#1976d2' }}
