@@ -91,7 +91,7 @@ const Services = () => {
 
   return (
     <div className="about-us" id="services">
-      <h1>{t('services.title')}</h1>
+      <h1><span>{t('services.title')}</span></h1>
       <div
         className="container"
         style={{
