@@ -18,80 +18,80 @@ const Services = () => {
 
   const servicesData = [
     {
-      heading: t('services.heading1'),
-      desc: t('services.desc1'),
-      f1: t('services.f1_1'),
-      f2: t('services.f2_1'),
+      heading: t("services.heading1"),
+      desc: t("services.desc1"),
+      f1: t("services.f1_1"),
+      f2: t("services.f2_1"),
       img: img1,
     },
     {
-      heading: t('services.heading2'),
-      desc: t('services.desc2'),
-      f1: t('services.f1_2'),
-      f2: t('services.f2_2'),
+      heading: t("services.heading2"),
+      desc: t("services.desc2"),
+      f1: t("services.f1_2"),
+      f2: t("services.f2_2"),
       img: img2,
     },
     {
-      heading: t('services.heading3'),
-      desc: t('services.desc3'),
-      f1: t('services.f1_3'),
-      f2: t('services.f2_3'),
+      heading: t("services.heading3"),
+      desc: t("services.desc3"),
+      f1: t("services.f1_3"),
+      f2: t("services.f2_3"),
       img: img3,
     },
     {
-      heading: t('services.heading4'),
-      desc: t('services.desc4'),
-      f1: t('services.f1_4'),
-      f2: t('services.f2_4'),
+      heading: t("services.heading4"),
+      desc: t("services.desc4"),
+      f1: t("services.f1_4"),
+      f2: t("services.f2_4"),
       img: img4,
     },
     {
-      heading: t('services.heading5'),
-      desc: t('services.desc5'),
-      f1: t('services.f1_5'),
-      f2: t('services.f2_5'),
+      heading: t("services.heading5"),
+      desc: t("services.desc5"),
+      f1: t("services.f1_5"),
+      f2: t("services.f2_5"),
       img: img5,
     },
     {
-      heading: t('services.heading6'),
-      desc: t('services.desc6'),
-      f1: t('services.f1_6'),
-      f2: t('services.f2_6'),
+      heading: t("services.heading6"),
+      desc: t("services.desc6"),
+      f1: t("services.f1_6"),
+      f2: t("services.f2_6"),
       img: img6,
     },
     {
-      heading: t('services.heading7'),
-      desc: t('services.desc7'),
-      f1: t('services.f1_7'),
-      f2: t('services.f2_7'),
+      heading: t("services.heading7"),
+      desc: t("services.desc7"),
+      f1: t("services.f1_7"),
+      f2: t("services.f2_7"),
       img: img7,
     },
     {
-      heading: t('services.heading8'),
-      desc: t('services.desc8'),
-      f1: t('services.f1_8'),
-      f2: t('services.f2_8'),
+      heading: t("services.heading8"),
+      desc: t("services.desc8"),
+      f1: t("services.f1_8"),
+      f2: t("services.f2_8"),
       img: img8,
     },
     {
-      heading: t('services.heading9'),
-      desc: t('services.desc9'),
-      f1: t('services.f1_9'),
-      f2: t('services.f2_9'),
+      heading: t("services.heading9"),
+      desc: t("services.desc9"),
+      f1: t("services.f1_9"),
+      f2: t("services.f2_9"),
       img: img9,
     },
     {
-      heading: t('services.heading10'),
-      desc: t('services.desc10'),
-      f1: t('services.f1_10'),
-      f2: t('services.f2_10'),
+      heading: t("services.heading10"),
+      desc: t("services.desc10"),
+      f1: t("services.f1_10"),
+      f2: t("services.f2_10"),
       img: img10,
     },
   ];
 
   return (
     <div className="about-us" id="services">
-      <h1>{t('services.title')}</h1>
+      <h1>{t("services.title")}</h1>
       <div
         className="container"
         style={{
@@ -101,7 +101,7 @@ const Services = () => {
           alignItems: "center",
           flexDirection: "row",
           flexWrap: "wrap",
-          marginTop: "100px",
+          // marginTop: "100px",
         }}
       >
         {servicesData.map((service, index) => (
