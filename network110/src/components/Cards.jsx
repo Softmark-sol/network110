@@ -5,11 +5,11 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import { FaLocationArrow } from "react-icons/fa";
-import { useTranslation } from "react-i18next"; 
+import { useTranslation } from "react-i18next";
 import "../css/cards.css";
 import ScrollReveal from "scrollreveal";
 
-const Cards = ({ heading, desc, f1, f2, img }) => {
+const Cards = ({ heading, img }) => {
   const { t } = useTranslation();
 
   useEffect(() => {
@@ -42,22 +42,30 @@ const Cards = ({ heading, desc, f1, f2, img }) => {
         borderRadius: "10px",
         boxShadow:
           "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",
-        backgroundImage: "url(../assets/images/cool-background.png)",
-      }}
-    >
-      <CardActionArea style={{ paddingBottom: "20px" }}>
-        <CardMedia component="img" height="180" image={img} alt={heading} />
+        backgroundImage:
+          "url(../assets/images/cool-background.png)",
+      }}>
+      <CardActionArea
+        style={{ paddingBottom: "20px" }}>
+        <CardMedia
+          component="img"
+          height="180"
+          image={img}
+          alt={heading}
+        />
         <CardContent className="card-content">
           <Typography
             className="heading"
             gutterBottom
             variant="h5"
-            style={{ fontSize: "1.3rem", fontWeight: "bolder" }}
-            component="div"
-          >
+            style={{
+              fontSize: "1.3rem",
+              fontWeight: "bolder",
+            }}
+            component="div">
             {heading}
           </Typography>
-          <Typography
+          {/* <Typography
             variant="body1"
             color="text.secondary"
             fontWeight="bold"
@@ -108,7 +116,7 @@ const Cards = ({ heading, desc, f1, f2, img }) => {
                 />
               </li>
             </ul>
-          </Typography>
+          </Typography> */}
         </CardContent>
       </CardActionArea>
     </Card>

@@ -6,8 +6,17 @@
     "contact": "Contact Us"
   },
   "hero": {
-    "title": "Internet, Networks, and Cameras Technician.",
-    "description": "A brief introduction to Network 110 and the services provided."
+    "point1": "Internet technician, networks, and cameras.",
+    "point2": "Internal hidden internet cabling installation without breaking.",
+    "point3": "Installation and programming of routers and access points.",
+    "point4": "Installation and setup of surveillance cameras and camera cabling.",
+    "point5": "Internet inspection and maintenance, resolving all internet issues like weak and intermittent connections.",
+    "point6": "Installation of internet sockets and RJ45 heads.",
+    "point7": "Solutions for internet, camera, and electrical problems.",
+    "point8": "Network maintenance, setup, and operation.",
+    "point9": "Providing internet throughout the house at the same speed as the main modem.",
+    "point10": "Installation of internet and cameras for homes, offices, hotels, and shops.",
+    "point11": "+966582180110"
   },
   "aboutUs": {
     "title": "About Us",
@@ -34,7 +43,7 @@
       "phone": "+966582180110",
       "address": "Al Olya Market, Riyadh, Saudi Arabia"
     },
-    "services":{
+    "services": {
       "services": "Our Services",
       "a": "Internet Cable Extension",
       "b": "Installation of Cameras",
@@ -51,54 +60,19 @@
   },
   "services": {
     "title": "Our Services",
-    "heading1": "Internet Cable Extension",
-    "desc1": "Hidden indoor extension without breaking.",
-    "f1_1": "Smooth extension",
-    "f2_1": "Minimal disruption",
-    "heading2": "Router and Access Point Installation and Configuration",
-    "desc2": "Setup and configuration of network devices.",
-    "f1_2": "Enhanced network performance",
-    "f2_2": "Secure setup",
-    "heading3": "Installation and Setup of Surveillance Cameras",
-    "desc3": "Setting up surveillance systems and extending camera cables.",
-    "f1_3": "Enhanced security",
-    "f2_3": "Professional installation",
-    "heading4": "Internet Inspection and Maintenance",
-    "desc4": "Resolve all internet issues including weak and intermittent connections.",
-    "f1_4": "Reliable internet",
-    "f2_4": "Repair services",
-    "heading5": "Installation of Internet Cables and RJ45 Headers",
-    "desc5": "Professional installation of internet cables and headers.",
-    "f1_5": "High-quality connections",
-    "f2_5": "Specialized installation",
-    "heading6": "Solutions for Internet, Camera, and Electrical Issues",
-    "desc6": "Comprehensive solutions for all related problems.",
-    "f1_6": "Effective solutions",
-    "f2_6": "Specialized repairs",
-    "heading7": "Network Maintenance and Setup",
-    "desc7": "Regular maintenance and operational setup of networks.",
-    "f1_7": "Optimal network performance",
-    "f2_7": "Continuous support",
-    "heading8": "Internet Coverage Throughout the House",
-    "desc8": "Ensuring consistent internet speed throughout the house.",
-    "f1_8": "Full house coverage",
-    "f2_8": "Stable performance",
-    "heading9": "Installation of Internet and Cameras in Various Locations",
-    "desc9": "Services for homes, offices, hotels, and shops.",
-    "f1_9": "Versatile installation",
-    "f2_9": "Customized solutions",
-    "heading10": "Electrical Solutions and Cable Installation",
-    "desc10": "Solutions for electrical and wiring installations.",
-    "f1_10": "Safe and reliable electrical work",
-    "f2_10": "Professional service"
+    "heading1": "Installation of camera and electrical cables, with and without electricity",
+    "heading2": "Solutions for internet, camera, and electrical problems",
+    "heading3": "Network maintenance, setup, and operation",
+    "heading4": "Internet inspection and maintenance, resolving all internet issues like weak and intermittent connections",
+    "heading5": "Installation of CAT6, CAT7, and CAT8 RJ45 heads",
+    "heading6": "Installation of internet sockets",
+    "heading8": "Installation and programming of boosters and access points",
+    "heading9": "Extension of internet points, internal hidden extension without breaking",
+    "heading7": "Installation and setup of surveillance cameras, extension of camera cables"
   },
   "features": "Features: ",
-  
-    "Services": "Services",
-    "AboutUs": "About Us",
-    "contactUs": "Contact Us"
-  
 
- 
-  
+  "Services": "Services",
+  "AboutUs": "About Us",
+  "contactUs": "Contact Us"
 }
