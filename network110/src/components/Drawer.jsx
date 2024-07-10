@@ -1,20 +1,20 @@
-import React, { useState } from 'react';
-import Box from '@mui/material/Box';
-import Drawer from '@mui/material/Drawer';
-import Button from '@mui/material/Button';
-import List from '@mui/material/List';
-import Divider from '@mui/material/Divider';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import { GiHamburgerMenu } from 'react-icons/gi';
-import { AiOutlineInfoCircle } from 'react-icons/ai';
-import { FaRegAddressBook } from 'react-icons/fa';
+import React, { useState } from "react";
+import Box from "@mui/material/Box";
+import Drawer from "@mui/material/Drawer";
+import Button from "@mui/material/Button";
+import List from "@mui/material/List";
+import Divider from "@mui/material/Divider";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemText from "@mui/material/ListItemText";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { AiOutlineInfoCircle } from "react-icons/ai";
+import { FaRegAddressBook } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
-import { MdWork } from 'react-icons/md';
-import Switch from '../languageSelector/Switch';
-import { useTranslation } from 'react-i18next';
+import { MdWork } from "react-icons/md";
+import Switch from "../languageSelector/Switch";
+import { useTranslation } from "react-i18next";
 
 const LeftDrawer = () => {
   const { t } = useTranslation();
@@ -24,8 +24,8 @@ const LeftDrawer = () => {
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (
-      event.type === 'keydown' &&
-      (event.key === 'Tab' || event.key === 'Shift')
+      event.type === "keydown" &&
+      (event.key === "Tab" || event.key === "Shift")
     ) {
       return;
     }
@@ -61,14 +61,14 @@ const LeftDrawer = () => {
   };
 
   const handleNavigation = (text) => {
-    switch(text){
-      case 'services':
+    switch (text) {
+      case "services":
         Services();
         break;
-      case 'aboutUs':
+      case "aboutUs":
         About();
         break;
-      case 'contactUs':
+      case "contactUs":
         Contact();
         break;
       default:
@@ -83,21 +83,35 @@ const LeftDrawer = () => {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <List>
+      <List sx={{ marginTop: "100px" }}>
         {[
-          { text: t('Services'), icon: <AiOutlineInfoCircle color="#00afef" />, key: "services" },
-          { text: t('AboutUs'), icon: <FaRegAddressBook color="#00afef" />, key: "aboutUs" },
-          { text: t('contactUs'), icon: <MdWork color="#00afef" />, key: "contactUs" },           
-          { text: '+966582180110', icon: <FaPhoneAlt color="#00afef" />, key: "phone" },
+          {
+            text: t("Services"),
+            icon: <AiOutlineInfoCircle color="#00afef" />,
+            key: "services",
+          },
+          {
+            text: t("AboutUs"),
+            icon: <FaRegAddressBook color="#00afef" />,
+            key: "aboutUs",
+          },
+          {
+            text: t("contactUs"),
+            icon: <MdWork color="#00afef" />,
+            key: "contactUs",
+          },
+          {
+            text: "+966582180110",
+            icon: <FaPhoneAlt color="#00afef" />,
+            key: "phone",
+          },
         ].map(({ text, icon, key }) => (
           <ListItem key={key} disablePadding>
             <ListItemButton
-              sx={{ paddingLeft: '8px' }}
+              sx={{ paddingLeft: "8px" }}
               onClick={() => handleNavigation(key)}
             >
-              <ListItemIcon
-                sx={{ minWidth: '35px', color: '#1976d2' }}
-              >
+              <ListItemIcon sx={{ minWidth: "35px", color: "#1976d2" }}>
                 {icon}
               </ListItemIcon>
               <ListItemText primary={text} />
@@ -111,14 +125,16 @@ const LeftDrawer = () => {
 
   return (
     <div>
-      <Button onClick={toggleDrawer('left', true)}><GiHamburgerMenu size={25} color='#00afef'/></Button>
+      <Button onClick={toggleDrawer("left", !state.left)}>
+        <GiHamburgerMenu size={25} color="#00afef" />
+      </Button>
       <Drawer
-        anchor='left'
+        anchor="left"
         open={state.left}
-        onClose={toggleDrawer('left', false)}
+        onClose={toggleDrawer("left", false)}
       >
-        {list('left')}
-        <Switch />  
+        {list("left")}
+        <Switch />
       </Drawer>
     </div>
   );

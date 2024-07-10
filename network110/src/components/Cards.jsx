@@ -38,21 +38,15 @@ const Cards = ({ heading, img }) => {
         width: "100%",
         margin: "5px",
         marginTop: "20px",
-        maxHeight: "25rem",
+        height: "18rem",
         borderRadius: "10px",
         boxShadow:
           "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",
-        backgroundImage:
-          "url(../assets/images/cool-background.png)",
-      }}>
-      <CardActionArea
-        style={{ paddingBottom: "20px" }}>
-        <CardMedia
-          component="img"
-          height="180"
-          image={img}
-          alt={heading}
-        />
+        backgroundImage: "url(../assets/images/cool-background.png)",
+      }}
+    >
+      <CardActionArea style={{ paddingBottom: "20px" }}>
+        <CardMedia component="img" height="180" image={img} alt={heading} />
         <CardContent className="card-content">
           <Typography
             className="heading"
@@ -62,7 +56,8 @@ const Cards = ({ heading, img }) => {
               fontSize: "1.3rem",
               fontWeight: "bolder",
             }}
-            component="div">
+            component="div"
+          >
             {heading}
           </Typography>
           {/* <Typography

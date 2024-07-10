@@ -19,13 +19,13 @@ const LogoParticles = () => {
         particleGap: 1,
       });
 
-      window.addEventListener("resize", handleResize);
+      window.addEventListener("resize", debounce(handleResize, 300));
     };
     document.body.appendChild(script);
 
     return () => {
       document.body.removeChild(script);
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("resize", debounce(handleResize, 300));
     };
   }, []);
 
@@ -38,6 +38,18 @@ const LogoParticles = () => {
       nextParticleRef.current.height = height;
       nextParticleRef.current.start();
     }
+  };
+
+  const debounce = (func, wait) => {
+    let timeout;
+    return (...args) => {
+      const later = () => {
+        clearTimeout(timeout);
+        func(...args);
+      };
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+    };
   };
 
   return (

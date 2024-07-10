@@ -6,6 +6,7 @@ import Services from "../components/Services";
 import Footer from "../components/Footer";
 import ContactForm from "../components/Contactus";
 import VideoPlayer from "../components/Video";
+import ScrollToTopButton from "../components/ScrollToTop";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <AboutUs />
       <ContactForm />
       <Footer />
+      <ScrollToTopButton />
     </div>
   );
 };

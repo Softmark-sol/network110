@@ -84,6 +84,11 @@ body {
   font-weight: bolder;
 }
 
+@media (max-width: 1000px) {
+  .right1 div span {
+    font-size: 0.9rem;
+  }
+}
 @media (max-width: 900px) {
   .right1 div span {
     font-size: 0.8rem;

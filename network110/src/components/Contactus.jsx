@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useEffect } from "react";
 import { useForm, Controller } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import "../css/contactForm.css";
@@ -6,6 +6,7 @@ import "../css/aboutUs.css";
 import "animate.css/animate.min.css";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+import ScrollReveal from "scrollreveal";
 
 const ContactForm = () => {
   const { t } = useTranslation();
@@ -19,6 +20,20 @@ const ContactForm = () => {
   const onSubmit = (data) => {
     console.log(data);
   };
+
+  useEffect(() => {
+    const sr = ScrollReveal({
+      origin: "top",
+      distance: "50px",
+      duration: 1000,
+      delay: 200,
+      reset: true,
+    });
+
+    sr.reveal(".container", {
+      interval: 200,
+    });
+  }, []);
 
   return (
     <div className="container">
