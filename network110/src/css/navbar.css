@@ -25,7 +25,7 @@ body {
   position: sticky;
   top: 0;
   background-color: #ffffff;
-  z-index: 2;
+  z-index: 20000000;
   height: 6vw;
 }
 
@@ -79,14 +79,14 @@ body {
   color: #00afef !important;
   font-weight: bold;
 }
-.num:hover{
+.num:hover {
   animation: tada 1s;
   font-weight: bolder;
 }
 
 @media (max-width: 900px) {
   .right1 div span {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -99,7 +99,7 @@ body {
     display: block;
   }
 
-  .navbar1{
+  .navbar1 {
     height: 10vw !important;
   }
 
@@ -107,7 +107,7 @@ body {
     margin-left: -40px;
     width: 40%;
   }
-  .left1 img{
+  .left1 img {
     width: 25vw;
   }
   .left1 h2 {
